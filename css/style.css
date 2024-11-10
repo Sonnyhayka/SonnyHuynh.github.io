@@ -1,0 +1,360 @@
+/* Add these new animation variables to your :root */
+:root {
+    /* Previous variables remain the same */
+    --animation-timing: cubic-bezier(0.4, 0, 0.2, 1);
+    --animation-slow: 700ms;
+    --animation-medium: 500ms;
+    --animation-fast: 300ms;
+}
+
+/* Animation Keyframes */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes rotateIn {
+    0% {
+        opacity: 0;
+        transform: rotate(-180deg) scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(0) scale(1);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+@keyframes glowPulse {
+    0% { box-shadow: 0 0 5px rgba(59, 130, 246, 0.5); }
+    50% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.8); }
+    100% { box-shadow: 0 0 5px rgba(59, 130, 246, 0.5); }
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+/* Enhanced Hero Section */
+.hero {
+    background: linear-gradient(-45deg, #EFF6FF, #DBEAFE, #BFDBFE, #93C5FD);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+.hero h1 {
+    animation: slideInTop var(--animation-slow) var(--animation-timing);
+}
+
+.hero p {
+    animation: slideInBottom var(--animation-slow) var(--animation-timing);
+    animation-delay: 200ms;
+}
+
+/* Animated Navigation */
+.nav-links a {
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-links a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: -100%;
+    background-color: var(--primary-color);
+    transition: left var(--animation-medium) var(--animation-timing);
+}
+
+.nav-links a:hover::before {
+    left: 0;
+}
+
+/* Enhanced Button Animations */
+.btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width var(--animation-medium), height var(--animation-medium);
+}
+
+.btn:hover::after {
+    width: 300%;
+    height: 300%;
+}
+
+.btn-primary:hover {
+    animation: pulse var(--animation-medium) var(--animation-timing);
+}
+
+/* Enhanced Project Cards */
+.project-card {
+    transition: all var(--animation-medium) var(--animation-timing);
+}
+
+.project-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+                0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.project-card img {
+    transition: transform var(--animation-medium) var(--animation-timing);
+}
+
+.project-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Skill Icons Animation */
+.skill-icon {
+    animation: float 3s ease-in-out infinite;
+}
+
+.skill-card:hover .skill-icon {
+    animation: rotateIn var(--animation-medium) var(--animation-timing);
+}
+
+/* Form Input Animations */
+.form-input:focus,
+.form-textarea:focus {
+    animation: glowPulse 2s infinite;
+}
+
+/* Gallery Image Animations */
+.gallery-item {
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-item img {
+    transition: transform var(--animation-medium) var(--animation-timing);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1) rotate(2deg);
+}
+
+.gallery-overlay {
+    background: rgba(0, 0, 0, 0);
+    transition: background var(--animation-medium) var(--animation-timing);
+}
+
+.gallery-item:hover .gallery-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    animation: fadeIn var(--animation-medium) var(--animation-timing);
+}
+
+/* Social Links Animation */
+.social-links a {
+    transition: transform var(--animation-medium) var(--animation-timing);
+}
+
+.social-links a:hover {
+    animation: bounce var(--animation-medium) var(--animation-timing);
+}
+
+/* Tag Animations */
+.tag {
+    transition: all var(--animation-medium) var(--animation-timing);
+}
+
+.tag:hover {
+    transform: scale(1.1) rotate(-2deg);
+}
+
+/* Animated Section Headers */
+.section-title {
+    opacity: 0;
+    animation: slideInLeft var(--animation-slow) var(--animation-timing) forwards;
+}
+
+/* Scroll Animations */
+.scroll-animate {
+    opacity: 0;
+    transition: all var(--animation-slow) var(--animation-timing);
+}
+
+.scroll-animate.from-left {
+    transform: translateX(-100px);
+}
+
+.scroll-animate.from-right {
+    transform: translateX(100px);
+}
+
+.scroll-animate.from-bottom {
+    transform: translateY(100px);
+}
+
+.scroll-animate.visible {
+    opacity: 1;
+    transform: translate(0);
+}
+
+/* Typewriter Effect for Hero Text */
+.typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid var(--primary-color);
+    animation: 
+        typewriter 4s steps(44) 1s 1 normal both,
+        blink 1s steps(44) infinite normal;
+}
+
+/* Loading Animation */
+.loading {
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.loading::before,
+.loading::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    animation: pulse 2s ease-out infinite;
+}
+
+.loading::before {
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    animation-delay: -0.5s;
+}
+
+.loading::after {
+    width: 75%;
+    height: 75%;
+    background-color: var(--primary-dark);
+    top: 12.5%;
+    left: 12.5%;
+}
+
+/* Hover Cards Effect */
+.hover-card {
+    transition: all var(--animation-medium) var(--animation-timing);
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.hover-card:hover {
+    transform: rotateY(10deg) rotateX(10deg);
+    box-shadow: 
+        -20px 20px 30px rgba(0, 0, 0, 0.2),
+        0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Add this JavaScript to make scroll animations work */
+/* Add as a separate script.js file:
+
+document.addEventListener('DOMContentLoaded', function() {
+    const scrollElements = document.querySelectorAll('.scroll-animate');
+
+    const elementInView = (el) => {
+        const elementTop = el.getBoundingClientRect().top;
+        return elementTop <= window.innerHeight * 0.8;
+    };
+
+    const displayScrollElement = (element) => {
+        element.classList.add('visible');
+    };
+
+    const handleScrollAnimation = () => {
+        scrollElements.forEach((el) => {
+            if (elementInView(el)) {
+                displayScrollElement(el);
+            }
+        });
+    };
+
+    window.addEventListener('scroll', handleScrollAnimation);
+    handleScrollAnimation();
+});
+*/

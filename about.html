@@ -3,42 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link href="style.css" rel="stylesheet">
+    <title>About - Son Huynh</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="bg-gray-50">
     <!-- Navigation -->
     <nav class="bg-white shadow-lg fixed w-full z-10">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex justify-between items-center h-16">
-                <a href="index.html" class="text-xl font-bold text-gray-800">Back to Home</a>
+                <a href="index.html" class="text-xl font-bold text-gray-800">Son Huynh</a>
                 <div class="hidden md:flex space-x-8">
-                    <a href="Son_Huynh_Resume F2.pdf" target="_blank" class="text-gray-600 hover:text-gray-900">Resume</a>
-                    <a href="https://www.linkedin.com/in/son-hoang-huynh/" target="_blank" class="text-gray-600 hover:text-gray-900">LinkedIn</a>
+                    <a href="about.html" class="text-blue-600 font-medium">About</a>
+                    <a href="projects.html" class="text-gray-600 hover:text-gray-900">Projects</a>
+                    <a href="#skills" class="text-gray-600 hover:text-gray-900">Skills</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-gray-900">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- About Section -->
-    <section class="pt-32 pb-20">
+    <!-- About Hero Section -->
+    <section class="pt-32 pb-20 bg-blue-50">
         <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
             <div class="flex flex-col md:flex-row items-center gap-12">
-                <div class="md:w-1/2">
-                    <img src="profile portrait.JPG" alt="Profile" class="rounded-lg shadow-lg w-full"/>
+                <div class="md:w-1/3">
+                    <img src="images/profile portrait.JPG" alt="Son Huynh" class="rounded-lg shadow-lg w-full">
                 </div>
-                <div class="md:w-1/2">
-                    <p class="text-gray-600 mb-4">
-                        I'm a Computer Engineering undergraduate with a foundation in both hardware and software.
-                        My studies and projects focus on embedded systems, wireless networks, and data analysis.  
-                        I’m passionate about creating meaningful solutions, and I aim to become a well-rounded engineer 
-                        skilled in areas like wireless technology, machine learning, and hardware optimization.
+                <div class="md:w-2/3 text-center md:text-left">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">About Me</h1>
+                    <p class="text-xl text-gray-600 mb-6">Embedded Software Engineer & Technology Enthusiast</p>
+                    <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+                        <a href="#experience" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300">My Experience</a>
+                        <a href="#gallery" class="bg-white text-blue-600 px-6 py-2 rounded-lg hover:bg-gray-100 transition duration-300 border border-blue-600">Photo Gallery</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Statement -->
+    <section class="py-20">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-3xl font-bold mb-6">Personal Statement</h2>
+                <div class="space-y-4 text-gray-600">
+                    <p>
+                        [Your personal statement - Introduce yourself and your passion for technology]
+                    </p>
+                    <p>
+                        [Discuss your journey in embedded systems and software development]
+                    </p>
+                    <p>
+                        [Share your goals and what drives you in your career]
                     </p>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Experience -->
+    <section id="experience" class="py-20 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Experience & Education</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Education -->
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h3 class="text-2xl font-bold mb-6 text-blue-600">Education</h3>
+                    <div class="space-y-6">
+                        <div class="border-l-4 border-blue-600 pl-4">
+                            <p class="font-bold text-lg">Degree Name</p>
+                            <p class="text-gray-600">University Name</p>
+                            <p class="text-gray-500">Year - Year</p>
+                            <p class="text-gray-600 mt-2">Brief description of your studies and achievements</p>
+                        </div>
+                        <!-- Add more education items as needed -->
+                    </div>
+                </div>
+
+                <!-- Work Experience -->
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h3 class="text-2xl font-bold mb-6 text-blue-600">Work Experience</h3>
+                    <div class="space-y-6">
+                        <div class="border-l-4 border-blue-600 pl-4">
+                            <p class="font-bold text-lg">Job Title</p>
+                            <p class="text-gray-600">Company Name</p>
+                            <p class="text-gray-500">Year - Present</p>
+                            <ul class="text-gray-600 mt-2 list-disc list-inside">
+                                <li>Key achievement or responsibility</li>
+                                <li>Key achievement or responsibility</li>
+                                <li>Key achievement or responsibility</li>
+                            </ul>
+                        </div>
+                        <!-- Add more work experience items as needed -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Interests -->
+    <section class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Skills & Interests</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Technical Skills -->
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h3 class="text-2xl font-bold mb-6 text-blue-600">Technical Skills</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <h4 class="font-bold mb-2">Programming</h4>
+                            <ul class="list-disc list-inside text-gray-600">
+                                <li>Skill 1</li>
+                                <li>Skill 2</li>
+                                <li>Skill 3</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-2">Tools</h4>
+                            <ul class="list-disc list-inside text-gray-600">
+                                <li>Tool 1</li>
+                                <li>Tool 2</li>
+                                <li>Tool 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Personal Interests -->
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h3 class="text-2xl font-bold mb-6 text-blue-600">Personal Interests</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <h4 class="font-bold mb-2">Hobbies</h4>
+                            <ul class="list-disc list-inside text-gray-600">
+                                <li>Hobby 1</li>
+                                <li>Hobby 2</li>
+                                <li>Hobby 3</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold mb-2">Interests</h4>
+                            <ul class="list-disc list-inside text-gray-600">
+                                <li>Interest 1</li>
+                                <li>Interest 2</li>
+                                <li>Interest 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section id="gallery" class="py-20 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Photo Gallery</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Replace with your actual images -->
+                <div class="relative group">
+                    <img src="images/profile portrait.JPG" alt="Gallery 1" class="w-full h-64 object-cover rounded-lg shadow-lg">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 rounded-lg flex items-center justify-center">
+                        <p class="text-white text-center px-4">Description of the image</p>
+                    </div>
+                </div>
+                <!-- Add more gallery items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="hover:text-gray-400">GitHub</a>
+                <a href="#" class="hover:text-gray-400">LinkedIn</a>
+                <a href="#" class="hover:text-gray-400">Twitter</a>
+            </div>
+            <p class="text-gray-400">© 2024 Son Huynh. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
 </body>
 </html>
