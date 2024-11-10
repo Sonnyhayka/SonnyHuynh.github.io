@@ -5,19 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <link href="style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="resume.pdf" target="_blank">Resume</a>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-10">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="text-xl font-bold text-gray-800">Back to Home</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="Son_Huynh_Resume F2.pdf" target="_blank" class="text-gray-600 hover:text-gray-900">Resume</a>
+                    <a href="https://www.linkedin.com/in/son-hoang-huynh/" target="_blank" class="text-gray-600 hover:text-gray-900">LinkedIn</a>
+                </div>
+            </div>
+        </div>
     </nav>
 
-    <section id="about">
-        <div class="container mx-auto px-4">
-            <h2>About Me</h2>
-            <p>
-                I’m a passionate developer with experience in building modern web applications. I love solving complex problems and creating intuitive user experiences.
-            </p>
+    <!-- About Section -->
+    <section class="pt-32 pb-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="/api/placeholder/400/400" alt="Profile" class="rounded-lg shadow-lg w-full"/>
+                </div>
+                <div class="md:w-1/2">
+                    <p class="text-gray-600 mb-4">
+                        I'm a passionate developer with experience in building modern web applications. 
+                        I love solving complex problems and creating intuitive user experiences.
+                    </p>
+                    <p class="text-gray-600">
+                        When I'm not coding, you can find me exploring new technologies, 
+                        contributing to open-source projects, or enjoying outdoor activities.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 </body>
