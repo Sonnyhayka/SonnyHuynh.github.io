@@ -9,4 +9,11 @@ nav a:hover {
     color: #2d3748;
 }
 
-/* Add custom styles for other sections here */
+#contact img {
+    transition: transform 0.3s ease;
+}
+
+#contact img:hover {
+    transform: scale(1.1);
+}
+
