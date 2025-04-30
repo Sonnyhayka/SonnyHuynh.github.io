@@ -7,142 +7,63 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
-<body class="bg-gray-50">
+<body class="bg-gradient-to-r from-gray-50 via-gray-100 to-gray-50">
     <!-- Navigation -->
-    <nav class="bg-white shadow-lg fixed w-full z-10">
+    <nav class="bg-gradient-to-r from-purple-600 to-blue-600 shadow-lg fixed w-full z-10 transition duration-300">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex justify-between items-center h-16">
-                <a href="index.html" class="text-xl font-bold text-gray-800">Son Huynh</a>
+                <a href="index.html" class="text-2xl font-bold text-white">Son Huynh</a>
                 <div class="hidden md:flex space-x-8">
-                    <a href="about.html" class="text-gray-600 hover:text-gray-900">About</a>
-                    <a href="projects.html" class="text-blue-600 font-medium">Projects</a>
-                    <a href="contact.html" class="text-gray-600 hover:text-gray-900">Contact</a>
+                    <a href="about.html" class="text-white hover:text-gray-200 transition duration-300">About</a>
+                    <a href="projects.html" class="text-white font-medium hover:text-gray-200 transition duration-300">Projects</a>
+                    <a href="contact.html" class="text-white hover:text-gray-200 transition duration-300">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Projects Hero -->
-    <section class="pt-32 pb-20 bg-blue-50">
+    <!-- Projects Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-r from-purple-500 via-blue-500 to-purple-500 text-white">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center">
-                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">My Projects</h1>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-                    Some of my projects I worked on while attending San Diego State University
-                </p>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">My Projects</h1>
+                <p class="text-xl">Explore some of the projects I have worked on during my academic and personal journey.</p>
             </div>
         </div>
     </section>
 
-   <!-- Featured Projects -->
-<section class="py-20">
-    <div class="max-w-7xl mx-auto px-4">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <!-- Project 1 -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                <div class="md:flex flex-col">
-                    <div class="md:h-96">
-                        <img src="/images/Place Holder.png" alt="Project 1" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-8">
-                        <h2 class="text-3xl font-bold mb-4">Arduino Wireless Weather Station</h2>
-                        <div class="flex gap-2 mb-4">
-                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Internet of Things</span>
-                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Python Data Analysis</span>
-                        </div>
-                        <p class="text-gray-600 mb-6">
-                            An ongoing project that built for Wireless Network course with IOT application 
-                        </p>
-                        <h3 class="font-bold text-lg mb-2">Key Features:</h3>
-                        <ul class="list-disc list-inside text-gray-600 mb-6">
-                            <li>Amazon IOT for developing Amazon Alexa's skill</li>
-                            <li>Uploading data to cloud, creating visualizations for user</li>
-                            <li>Smart home automation, implementing home's smart home ecosystem.</li>
-                        </ul>
-                        <div class="flex gap-2">
-                        </div>
+    <!-- Featured Projects -->
+    <section class="py-20 bg-gradient-to-r from-gray-50 via-gray-100 to-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="/images/Place Holder.png" alt="Project 1" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h2 class="text-2xl font-bold mb-4">Arduino Wireless Weather Station</h2>
+                        <p class="text-gray-600 mb-4">An IoT-based weather station built using Arduino components and cloud integration.</p>
+                        <a href="#" class="text-purple-600 hover:underline">Learn More</a>
                     </div>
                 </div>
-            </div>
 
-            <!-- Project 2 -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                <div class="md:flex flex-col">
-                    <div class="md:h-96">
-                        <img src="/images/FPV Drone.png" alt="Project 2" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-8">
-                        <h2 class="text-3xl font-bold mb-4">FPV Drone with Smart Controller</h2>
-                        <div class="flex gap-2 mb-4">
-                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">FPV Drone</span>
-                            <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Flight Control</span>
-                        </div>
-                        <p class="text-gray-600 mb-6">
-                            A project was built for my personal hobby and interest in Internet of Things
-                        </p>
-                        <h3 class="font-bold text-lg mb-2">Key Features:</h3>
-                        <ul class="list-disc list-inside text-gray-600 mb-6">
-                            <li>Total 10 minute of flight time allow more time to perfome aerial maneuvers </li>
-                            <li>Crash resistant at low speed and stability at high speed maneuvers</li>
-                            <li>Crossfire protocol for low latency and connection quality, GPS coordinations </li>
-                        </ul>
-                        <div class="flex gap-4">
-                        </div>
+                <!-- Project 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+                    <img src="/images/FPV Drone.png" alt="Project 2" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h2 class="text-2xl font-bold mb-4">FPV Drone with Smart Controller</h2>
+                        <p class="text-gray-600 mb-4">A custom-built FPV drone with enhanced flight control and GPS integration.</p>
+                        <a href="#" class="text-purple-600 hover:underline">Learn More</a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-    
+    </section>
+
     <!-- Footer -->
-<footer class="bg-gray-800 text-white py-8">
-    <div class="max-w-6xl mx-auto px-4">
-        <div class="flex flex-col items-center justify-center">
-            <!-- Social Links -->
-            <div class="flex justify-center space-x-6 mb-6">
-                <a 
-                    href="https://github.com/Sonnyhayka" 
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="hover:text-gray-400 transition-colors duration-200 flex items-center space-x-2"
-                >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                    </svg>
-                    <span>GitHub</span>
-                </a>
-                
-                <a 
-                    href="https://www.linkedin.com/in/son-hoang-huynh/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="hover:text-gray-400 transition-colors duration-200 flex items-center space-x-2"
-                >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                        <rect x="2" y="9" width="4" height="12"></rect>
-                        <circle cx="4" cy="4" r="2"></circle>
-                    </svg>
-                    <span>LinkedIn</span>
-                </a>
-                
-                <a 
-                    href="mailto:huynhhoangson608@gmail.com"
-                    class="hover:text-gray-400 transition-colors duration-200 flex items-center space-x-2"
-                >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                        <polyline points="22,6 12,13 2,6"></polyline>
-                    </svg>
-                    <span>Email</span>
-                </a>
-            </div>
-            
-            <!-- Copyright -->
-            <div class="text-gray-400">
-                <p>© <script>document.write(new Date().getFullYear())</script> Son Huynh. All rights reserved.</p>
-            </div>
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-gray-400">© <script>document.write(new Date().getFullYear())</script> Son Huynh. All rights reserved.</p>
         </div>
-    </div>
-</footer>
+    </footer>
+</body>
+</html>
